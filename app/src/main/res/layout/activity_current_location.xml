@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeButton.CurrentLocation">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Location"
+        android:id="@+id/getLoc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:layout_below="@+id/addrtxt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude :"
+        android:id="@+id/lattxt"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Availabe"
+        android:id="@+id/latvalue"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/lattxt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude :"
+        android:id="@+id/langtxt"
+        android:layout_below="@+id/lattxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Availabe"
+        android:id="@+id/langvalue"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/lattxt"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/langtxt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address :"
+        android:id="@+id/addrtxt"
+        android:layout_below="@+id/langtxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Availabe"
+        android:id="@+id/addevalue"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/langtxt"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/langtxt"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getLoc"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:id="@+id/save"
+        android:text="Save Location"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
