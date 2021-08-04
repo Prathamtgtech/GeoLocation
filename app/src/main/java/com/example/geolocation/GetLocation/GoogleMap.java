@@ -1,4 +1,4 @@
-package com.example.geolocation.HomeButton;
+package com.example.geolocation.GetLocation;
 
 import androidx.appcompat.app.AppCompatActivity;
 

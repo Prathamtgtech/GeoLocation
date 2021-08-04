@@ -12,12 +12,13 @@ public class SaveLocation {
     double latval;
     double landval;
     String addrval;
+    String path;
 
-
-    public SaveLocation(double latval, double landval, String addrval) {
+    public SaveLocation(double latval, double landval, String addrval,String path) {
         this.latval = latval;
         this.landval = landval;
         this.addrval = addrval;
+        this.path = path;
     }
 
     public double getLatval() {

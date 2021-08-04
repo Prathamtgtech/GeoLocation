@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.geolocation.HomeButton.CurrentLocation;
+import com.example.geolocation.GetLocation.CurrentLocation;
+import com.example.geolocation.GoogleMap.Google_Map;
 
 public class Home extends AppCompatActivity {
 Button gpsloc,gmap;
@@ -32,7 +33,9 @@ Button gpsloc,gmap;
         gmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(Home.this, Google_Map.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }
